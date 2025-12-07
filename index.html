@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon.jpg" width="50px">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Science+Gothic:wght@100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio Website - SK Reyad Ali</title>
+
+</head>
+
+<body>
+
+    <!--------------------------------------- Hero section ----------------------------------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="./assets/logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="./assets/cross.png" class="menu" onclick="closemenu()">
+                </ul>
+                <img src="./assets/menu.png" class="menu" onclick="openmenu()">
+            </nav>
+            <div class="header-text">
+                <p class="profession">
+                    <span class="role">Computer Science Student</span>
+                    <!-- <span class="role">Graphics Designer</span>
+                    <span class="role">Web Developer</span>
+                    <span class="role">Computer Science Student</span> -->
+                </p>
+                <h1>Hi, I'm <span>Reyad</span> from<br>Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------- About Me section ----------------------------------------------->
+    <div id="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/about_me.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title">About <span>Me</span></h1>
+                    <p class="bio">I'm a BSc. student in Computer Science at <a href="https://www.bracu.ac.bd/">BRAC University</a>, driven by a strong passion for technology, innovation and problem-solving. Although I'm currently living in Dhaka, the vibrant capital of Bangladesh, but my roots lie in Khulna, one of the most peaceful and culturally rich cities in the country. My immediate goal is to successfully complete my BSc in Computer Science, building a solid foundation in software development, algorithms, and emerging technologies. Looking ahead, I aspire to pursue a Master’s degree abroad to deepen my expertise and gain global exposure. With long-term ambitions of working at leading tech companies such as <a href="https://www.google.com/">Google</a>, <a href="https://www.amazon.com/">Amazon</a>, <a href="https://www.meta.com/">Meta</a> or <a href="https://www.apple.com/">Apple</a>. I aim to refine my skills on a world-class stage and contribute to impactful, large-scale projects. Ultimately, after acquiring sufficient experience and resources, I plan to establish my own tech-driven company and create solutions that bring meaningful change. I am committed to continuous learning, personal growth and building a future where my skills can make a difference.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!------------------------------ Skills --------------------------------------------->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphics Design</span><br>Designing Social Media Posts</li>
+                            <li><span>Social Media Managing</span><br>Managing Facebook & Instagram Pages</li>
+                            <li><span>Digital Marketing</span><br>Boosting Social Media Page Posts</li>
+                            <li><span>OOP in Java</span><br>Basic Object Oriented Programming in Java</li>
+                            <li><span>Web Development</span><br>Building Websites based on HTML, CSS & Java Script</li>
+                        </ul>
+                    </div>
+                    <!------------------------------ Experience --------------------------------------------->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>IT Officer at <a href="https://rednetworkbd.net/">Red Network LTD.</a></li>
+                            <li><span>2023 - 2024</span><br>Junior IT Officer at <a href="https://rednetworkbd.net/">Red Network LTD.</a></li>
+                            <li><span>2022 - 2023</span><br>Graphics Designer & Social Media Manager at <a href="https://rednetworkbd.net/">Red Network LTD.</a></li>
+                            <li><span>2021 - 2022</span><br>Graphics Designer at <a href="https://rednetworkbd.net/">Red Network LTD.</a></li>
+                            <li><span>2020 - 2021</span><br>Junior Graphics Designer at <a href="https://rednetworkbd.net/">Red Network LTD.</a></li>
+                            <li><span>2019 - 2020</span><br>IT Intern at <a href="https://rednetworkbd.net/">Red Network LTD.</a></li>
+                        </ul>
+                    </div>
+                    <!------------------------------ Education --------------------------------------------->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - Current</span><br>BSc. in Computer Science (CS) from <a href="https://www.bracu.ac.bd/">BRAC University</a></li>
+                            <li><span>2021</span><br>HSC from <a href="https://www.blcollege.edu.bd/">Government Brajalal College</a></li>
+                            <li><span>2019</span><br>SSC from <a href="https://khulnazillaschool.jessoreboard.gov.bd/">Khulna Zilla School</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--------------------------------------- Services section ----------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div class="graphics">
+                    <img src="./assets/illustrator.png"> <img src="./assets/photoshop.png">
+                    <h2 class="sub-title">Graphics Designs</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illum fugit qui dignissimos temporibus! Minus nesciunt consequuntur dolor mollitia non velit, voluptatem fugit officiis, nobis id harum inventore a recusandae?re</p>
+                    <a href="https://www.behance.net/skreyad1">Learn More</a>
+                </div>
+                <div class="managing">
+                    <img src="./assets/facebook.png"> <img src="./assets/instagram.png"> <img src="./assets/whatsapp.png"> <img src="./assets/meta.png">
+                    <h2 class="sub-title">Social Media Managing</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illum fugit qui dignissimos temporibus! Minus nesciunt consequuntur dolor mollitia non velit, voluptatem fugit officiis, nobis id harum inventore a recusandae?re</p>
+                    <a href="https://web.facebook.com/rednetbd/">Learn More</a>
+                </div>
+                <div class="marketing">
+                    <img src="./assets/digital-campaign.png"> <img src="./assets/google-ads.png">
+                    <h2 class="sub-title">Digital Marketing</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illum fugit qui dignissimos temporibus! Minus nesciunt consequuntur dolor mollitia non velit, voluptatem fugit officiis, nobis id harum inventore a recusandae?re</p>
+                    <a href="https://web.facebook.com/rednetbd/">Learn More</a>
+                </div>
+                <div class="web-dev">
+                    <!-- <img src="./assets/web-development.png"> -->
+                    <img src="./assets/html-5.png"> <img src="./assets/css-3.png"> <img src="./assets/js-file.png">
+                    <h2 class="sub-title">Web Development</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illum fugit qui dignissimos temporibus! Minus nesciunt consequuntur dolor mollitia non velit, voluptatem fugit officiis, nobis id harum inventore a recusandae?re</p>
+                    <a href="https://github.com/sk-reyad">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------- Portfolio ----------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title">My <span>Works</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Package Rate Design</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ipsam unde eum repellendus perspiciatis harum alias esse iste natus aliquid?</p>
+                        <a href="https://web.facebook.com/share/p/16qQcK2kPH/"><img src="./assets/link.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media Post Design</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ipsam unde eum repellendus perspiciatis harum
+                            alias esse iste natus aliquid?</p>
+                        <a href="https://web.facebook.com/share/p/1ADKTegT5o/"><img
+                                src="./assets/link.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Awareness Post Design</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ipsam unde eum repellendus perspiciatis harum
+                            alias esse iste natus aliquid?</p>
+                        <a href="https://web.facebook.com/share/p/1D2ZuP7JVa/"><img
+                                src="./assets/link.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://web.facebook.com/rednetbd/" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!--------------------------------------- Contact Me ----------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact <span>Me</span></h1>
+                    <p><img src="./assets/email.png" alt="">skreyad2016@gmail.com</p>
+                    <p><img src="./assets/call.png" alt="">01955448893</p>
+                    <div class="social-icons">
+                        <a href="http://facebook.com/sk.reyad2014"><img src="./assets/fb-2.png"></a>
+                        <a href="https://www.instagram.com/__sk_reyad__/"><img src="./assets/ig-2.png"></a>
+                        <a href="http://wa.me/+8801955448893"><img src="./assets/wp.png"></a>
+                        <a href="http://www.linkedin.com/in/sk-reyad"><img src="./assets/l-in.png"></a>
+                        <a href="https://x.com/SkReyad"><img src="./assets/twitter.png"></a>
+                        <a href="http://github.com/sk-reyad"><img src="./assets/github.png"></a>
+                        <a href="https://www.behance.net/skreyad1"><img src="./assets/behance.png"></a>
+                    </div>
+                    <a href="https://flowcv.com/resume/0eufdbj1p7gd" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form method="post" action="https://api.web3forms.com/submit">
+                        <input type="hidden" name="access_key" value="7bdbda22-0031-44f0-9fc0-d8e99b1793af">
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Write Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025. All Rights Reserved - by SK <span>Reyad</span> Ali</p>
+        </div>
+    </div>
+
+    <!--------------------------------------- Java Script ----------------------------------------------->
+    <script src="script.js"></script>
+</body>
+</html>
