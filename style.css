@@ -80,6 +80,12 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header-text h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .header-text h1 span{
